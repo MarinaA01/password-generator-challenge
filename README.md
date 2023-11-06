@@ -11,9 +11,7 @@ N/A
 
 This password generator can be used by clicking on the "generate password" button. Once clicked, prompts will appear that will ask you the length of your desired passwords and what character type you'd like including special characters, numeric, lowercase, and uppercase characters.
 
-
-
-
+![password-generator](https://github.com/MarinaA01/password-generator-challenge/assets/68477249/09cd03a0-a21a-4012-9159-7348fddb2d7d)
 
 ## Credits
 
