@@ -18,6 +18,8 @@ function generatePassword() {
 
     )
 
+    // From Random Password Generator with Prompts from StackOverflow
+
      var charSets = {
         lowercase: "abcdefghijklmnopqrstuvwxyz",
         uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -27,12 +29,6 @@ function generatePassword() {
 
      var charSet = charSets[charType.toLowerCase()] || charSets.lowercase;
      var pass = '';
-
-    // return confirm("Include Lowercase Letters?");
-    // return confirm("Include Upercase Letters?");
-    // return confirm("Include Numbers?");
-    // return confirm("Include Special Characters?");
-    // return alert("Your Password is :");
 
     // From Geeks for Geeks How to Generate a Random Password Using JavaScript? and Random Password Generator with Prompts from StackOverflow
     for (var i = 0; i < length; i++) {
