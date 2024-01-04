@@ -48,6 +48,7 @@ function generatePassword() {
     var password = "";
 
     // For loop to generate password length
+    // Code from GeeksForGeeks and Xpert Learning Assistant
 
     for (var i = 0; i < length; i++) {
         var pass = Math.floor(Math.random() * characterPool.length);

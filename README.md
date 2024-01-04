@@ -15,13 +15,10 @@ This password generator can be used by clicking on the "generate password" butto
 
 ## Credits
 
-I recieved help from TAs Matteo Wallace, and Gerard Mennella for the start and completion of my project.
+I recieved help from TAs Matteo Wallace, and Gerard Mennella for the start and completion of my project. I also received help from Xpert Learning Assistant on Bootcamp Spot (BCS).
 
 GeeksforGeeks. (2023, August 11). How to generate a random password using JavaScript ?. 
-    GeeksforGeeks. https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/ 
-(2020, July). Random password generator with prompts. Stack Overflow. https://stackoverflow.com/questions/62627469/random-password-generator-with-prompts 
-
-
+    GeeksforGeeks. https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/
 
 ## License
 
