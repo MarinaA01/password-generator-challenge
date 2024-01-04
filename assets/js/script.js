@@ -13,29 +13,49 @@ function writePassword() {
 // Function started by TA Gerard Mennella
 function generatePassword() {
 
-    var length = Number(prompt("How many characters will your password be? Enter a number between 8 and 128."),
-        charType = prompt("Enter a character type: special, numeric, uppercase, lowercase"),
+    var length = parseInt(prompt("How many characters will your password be? Enter a number between 8 and 128."))
 
-    )
+    while (isNaN(length) || length < 8 || length > 128) {
+        length = parseInt(prompt('Invalid input. Enter a valid password length.'));
+    }
 
-    // From Random Password Generator with Prompts from StackOverflow
+    var lowercase = confirm("Include lowercase characters?");
+    var uppercase = confirm("Include uppercase characters?");
+    var special = confirm("Include special characters?");
+    var numeric = confirm("Include numeric characters?");
 
-     var charSets = {
-        lowercase: "abcdefghijklmnopqrstuvwxyz",
-        uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        numeric: "0123456789",
-        special: "!/=-,.'*&#"
-     }
+    // Assisted by BCS Xpert 
+    // Character pool code to include or exclude characters
 
-     var charSet = charSets[charType.toLowerCase()] || charSets.lowercase;
-     var pass = '';
+    var characterPool = "";
 
-    // From Geeks for Geeks How to Generate a Random Password Using JavaScript? and Random Password Generator with Prompts from StackOverflow
+    if (lowercase) {
+        characterPool += "abcdefghijklmnopqrstuvwxyz";
+    }
+
+    if (uppercase) {
+        characterPool += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
+
+    if (special) {
+        characterPool += "!@#$%^&*()";
+    }
+
+    if (numeric) {
+        characterPool += "0123456789"
+    }
+
+    var password = "";
+
+    // For loop to generate password length
+
     for (var i = 0; i < length; i++) {
-         pass += charSet.charAt(Math.floor(Math.random() * charSet.length));
-     }
-     console.log(pass);
-    return pass;
+        var pass = Math.floor(Math.random() * characterPool.length);
+        password += characterPool[pass];
+    }
+
+    console.log(password);
+    return password;
 }
-// Add event listener to generate button
+// Added event listener to generate button
 generateBtn.addEventListener("click", writePassword);
