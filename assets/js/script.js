@@ -55,7 +55,6 @@ function generatePassword() {
         password += characterPool[pass];
     }
 
-    console.log(password);
     return password;
 }
 // Added event listener to generate button
